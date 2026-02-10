@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียนนักเรียนใหม่</title>
+    <link rel="stylesheet" href="enrollNewStudent.css">
+</head>
+<body>
+    <main>
+        
+        <form action="" class="studentForm">
+            <div class="form-grid">
+
+                <!--Student Image-->
+                <section id="imgSection">
+                    <div class="imgBox">
+                        <label class="imgUpload">
+                            <input type="file" id="studentImg" accept="image/png, image/jpeg" hidden>
+                            <span>+</span>
+                        </label>
+                        <p>ภาพนักเรียน</p>
+                    </div>
+                </section>
+                
+                <!--Student Information-->
+                <section class="formSection">
+                    <h3>ข้อมูลนักเรียน</h3>
+                    <div class="formField">
+                            <div class="row">
+                                <div class="field">
+                                <label for="studentFirstName">ชื่อ</label>
+                                <input type="text" id="studentFirstName">
+                                </div>
+                                <div class="field">
+                                    <label for="studentLastName">นามสกุล</label>
+                                    <input type="text" id="studentLastName">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="field">
+                                    <label for="studentNickName">ชื่อเล่น</label>
+                                    <input type="text" id="studentNickName" placeholder="น้องมิคาสะ" required>
+                                </div>
+                                <div class="field">
+                                    <label for="studentAge">อายุ</label>
+                                    <input type="number" id="studentAge">
+                                </div>
+                                <div class="field">
+                                    <label for="studentGradeLevel">ชั้นเรียน</label>
+                                    <select id="studentGradeLevel" >
+                                        <!--ดึง option จาก db-->
+                                        <option value="grade1">ประถมศึกษาปีที่ 1 (ป.1)</option>
+                                        <option value="grade2">ประถมศึกษาปีที่ 2 (ป.2)</option>
+                                        <option value="grade3">ประถมศึกษาปีที่ 3 (ป.3)</option>
+                                        <option value="grade4">ประถมศึกษาปีที่ 4 (ป.4)</option>
+                                        <option value="grade5">ประถมศึกษาปีที่ 5 (ป.6)</option>
+                                        <option value="grade6">ประถมศึกษาปีที่ 6 (ป.6)</option>
+                                        <option value="grade7">มัธยมศึกษาปีที่ 1 (ม.1)</option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="studentSchoolName">ชื่อโรงเรียน</label>
+                                    <input type="text" id="studentSchoolName">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="field">
+                                    <label for="enrolledDate">วันที่สมัคร</label>
+                                    <input type="date" id="enrolledDate">
+                                </div>
+                            </div>
+                    </div>
+                    <!--Parent Information-->
+                    <h3>ข้อมูลผู้ปกครอง</h3>
+                    <div class="formField">
+                        <div class="row">
+                            <div class="field">
+                                <label for="parentFirstName">ชื่อ</label>
+                                <input type="text" id="parentFirstName">
+                            </div>
+                            <div class="field">
+                                <label for="parentLastName">นามสกุล</label>
+                                <input type="text" id="parentLastName">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="field">
+                                <label for="parentEmail">ที่อยู่อีเมล</label>
+                                <input type="email" id="parentEmail">
+                            </div>
+                            <div class="field">
+                                <label for="parentRequirement">ความต้องการของผู้ปกครอง</label>
+                                <textarea id="parentRequirement" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Course Information-->
+                    <h3>ข้อมูลคอร์สที่ลงทะเบียน</h3>
+                    <div class="formField">
+                        
+                        <section>
+                            <div class="row">
+                                <div class="field">
+                                    <label for="CourseName">ชื่อคอร์ส</label>
+                                    <select id="CourseName" >
+                                        <!--ดึง option จาก db-->
+                                        <option value="English grade7">ภาษาอังกฤษ ม.1</option>
+                                        <option value="Math grade6">คณิตศาสตร์ ป.6</option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="amountSession">จำนวนคาบ</label>
+                                    <input type="number" id="amountSession" >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="field">
+                                    <label for="startDate">วันที่เริ่มเรียน</label>
+                                    <input type="date" id="startDate">
+                                </div >
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <br>
+                                    <input type="checkbox" id="" checked>
+                                    <label for="">บันทึกในตารางสอน</label>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <!--choose time schedule-->
+                            <div class="field">
+                                <label for="time"></label>
+                            </div>
+                        </section>
+                    </div>
+                    <!--Other Infomation-->
+                    <h3>ข้อมูลอื่นๆ</h3>
+                    <div class="formField">
+                        
+                        <div class="row">
+                            <div class="field">
+                                <label for="bookName">ชื่อหนังสือ</label>
+                                <input type="text" id="bookName">
+                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="field">
+                                <p>ภาพหนังสือเรียนที่โรงเรียน</p>
+                                <div class="imgBox">
+                                    <label class="imgUpload">
+                                        <input type="file" id="studentImg" accept="image/png, image/jpeg" hidden>
+                                        <span>+</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
