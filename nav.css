@@ -1,0 +1,11 @@
+.navigation > ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  background-color: #a084dc;
+  padding: 0.8rem;
+}
+
+.btn {
+  border: none;
+}

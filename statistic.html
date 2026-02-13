@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="statistic.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar"></nav>
+    </header>
+    <article class="container">
+      <h1 class="topic">รายงานสถิติการสอน</h1>
+      <div class="d-flex align-items-center gap-3">
+        <h3>รายงานสถิติการสอนทั้งหมด</h3>
+        <form action="">
+          <select name="months" id="month" class="selectStat">
+            <option value="" selected disabled hidden>เดือน</option>
+            <option value="all">ทั้งหมด</option>
+            <option value="january">มกราคม</option>
+            <option value="febuary">กุมภาพันธ์</option>
+            <option value="march">มีนาคม</option>
+            <option value="april">เมษายน</option>
+            <option value="may">พฤษภาคม</option>
+            <option value="june">มิถุนายน</option>
+            <option value="july">กรกฎาคม</option>
+            <option value="august">สิงหาคม</option>
+            <option value="september">กันยายน</option>
+            <option value="october">ตุลาคม</option>
+            <option value="november">พฤศจิกายน</option>
+            <option value="december">ธันวาคม</option>
+          </select>
+        </form>
+        <form action="">
+          <select name="months" id="month" class="selectStat">
+            <option value="" selected disabled hidden>ปี</option>
+            <option value="all">ทั้งหมด</option>
+            <option value="2568">2568</option>
+            <option value="2569">2569</option>
+          </select>
+        </form>
+      </div>
+      <div class="d-flex gap-3">
+        <div class="block-stat">
+          <h4>จำนวนชั่วโมงที่สอน</h4>
+          <p></p>
+        </div>
+        <div class="block-stat">
+          <h4>จำนวนนักเรียน</h4>
+          <p></p>
+        </div>
+        <div class="block-stat">
+          <h4>จำนวนคลาสที่สอน</h4>
+          <p></p>
+        </div>
+        <div class="block-stat">
+          <h4>รายรับทั้งหมด</h4>
+          <p></p>
+        </div>
+      </div>
+      <div>
+        <h3>รายงานสถิติการสอนต่อคอร์ส</h3>
+        <div></div>
+      </div>
+    </article>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="navbar.js"></script>
+  </body>
+</html>
