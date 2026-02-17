@@ -15,10 +15,11 @@
 }
 
 .left {
-    background-image:url(../img/login-pic.avif) ;
-
+    background-image: url(../img/login-pic.avif);
     background-repeat: no-repeat;
     background-size: cover;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
     width: 50%;
     height: 100vh;
     display: flex;
@@ -28,17 +29,13 @@
 }
 
 .left h1 {
-    color: aliceblue;
-    font-size: 8rem;
-    margin:0 5rem 0 5rem;
-    font-size: 8rem;
+    color: #141414c0;
+    margin: 0 5rem 0 5rem;
+    font-size: 4rem;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.15);
+    background: #e7e7e763;
     box-shadow: 0 15px 40px #00000059;
-    border: 1px solid #ffffff40;
-    color: #fff;
     padding: 2rem;
-
 }
 
 .right {
@@ -49,6 +46,7 @@
     align-items: center;
     display: flex;
     position: relative;
+
 }
 
 #logo-login {
@@ -80,7 +78,7 @@
 
 .choose h3 a {
     text-decoration: none;
-    color: #000000;
+    color: #353535;
 }
 
 .choose-left,
@@ -92,18 +90,24 @@
 }
 
 #active {
-    color: black;
+    color: #353535;
     box-shadow: inset 0 3px 6px #0000004d;
     background-color: #EBC7E6;
     padding: 0rem 1rem 0.5rem 1rem;
-    border-radius: 10px;
+    border-radius: 70px;
+}
+
+#unactive {
+    box-shadow: inset 0 3px 6px #0000004d;
+    border-radius: 70px;
+    padding: 0rem 1rem 0.5rem 1rem;
 }
 
 #unactive:hover {
     box-shadow: inset 0 3px 6px #0000004d;
     background-color: #eeeeee;
     padding: 0rem 1rem 0.5rem 1rem;
-    border-radius: 10px;
+    border-radius: 70px;
     transition: 0.2s;
 }
 
@@ -148,12 +152,15 @@
 }
 
 .login-btn {
-    width: 50%;
+    width: 30%;
     padding: 1rem;
     border: none;
-    border-radius: 20px;
-    background: #ddd;
+    border-radius: 50px;
+    background: #EBC7E6;
     cursor: pointer;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
 }
 
 .login-btn:hover {
