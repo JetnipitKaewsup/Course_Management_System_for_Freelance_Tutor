@@ -9,7 +9,7 @@
 }
 
 .all {
-     /* background-image: url(../img/login-pic.avif);
+    /* background-image: url(../img/login-pic.avif);
     background-repeat: no-repeat;
     background-size: cover; */
     display: flex;
@@ -28,18 +28,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
 
 }
 
 .left h1 {
     color: #f0f8ff;
     font-size: 8rem;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 15px 40px #00000059;
-  border: 1px solid #ffffff40;
-  color: #fff;
-  padding: 2rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 15px 40px #00000059;
+    border: 1px solid #ffffff40;
+    color: #fff;
+    padding: 2rem;
 
 }
 
@@ -51,6 +53,7 @@
     align-items: center;
     display: flex;
     position: relative;
+
 }
 
 
@@ -83,7 +86,7 @@
 
 .choose h3 a {
     text-decoration: none;
-    color: #000000;
+    color: #353535;
 }
 
 .choose-left,
@@ -95,20 +98,27 @@
 }
 
 #active {
-    color: black;
+    color: #353535;
     box-shadow: inset 0 3px 6px #0000004d;
     background-color: #EBC7E6;
     padding: 0rem 1rem 0.5rem 1rem;
-    border-radius: 10px;
+    border-radius: 70px;
+}
+
+#unactive {
+    box-shadow: inset 0 3px 6px #0000004d;
+    border-radius: 70px;
+    padding: 0rem 1rem 0.5rem 1rem;
 }
 
 #unactive:hover {
     box-shadow: inset 0 3px 6px #0000004d;
     background-color: #eeeeee;
     padding: 0rem 1rem 0.5rem 1rem;
-    border-radius: 10px;
+    border-radius: 70px;
     transition: 0.2s;
 }
+
 
 .form {
     display: flex;
@@ -139,7 +149,7 @@
 .choose-role.selected {
     background-color: #49ff74;
     color: white;
-    border: 0.2rem #09a009 solid ;
+    border: 0.2rem #09a009 solid;
 }
 
 .form-name {
@@ -203,8 +213,9 @@
     background: #ddd;
     cursor: pointer;
 }
-.regist-btn:hover{
-    background-color:#A084DC ;
+
+.regist-btn:hover {
+    background-color: #A084DC;
     color: #ffffff;
     transition: 0.2s;
 }
@@ -240,23 +251,24 @@
 }
 
 .choice-role-text {
-  display: flex;
-  justify-content: center; 
-  align-items: center;  
-  margin: -0.5rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -0.5rem;
 
 }
 
 .role-text-parent,
 .role-text-tutor {
-  display: flex;          
-  justify-content: center;
-  align-items: center;
-  padding: 0rem 6rem;
-  /* transition: 0.25s ease; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 6rem;
+    /* transition: 0.25s ease; */
 }
-.form-name span,.password-box span,.email-box span{
+
+.form-name span,
+.password-box span,
+.email-box span {
     color: red;
 }
-
-
