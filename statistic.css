@@ -11,3 +11,8 @@
   border: 2px solid black;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
+
+.block-stat p {
+  font-size: 2rem;
+  text-align: center;
+}
