@@ -18,7 +18,7 @@
     <main class="container-fluid ">
         <div class="all">
             <div class="left">
-                <h1>WELLCOME BACK!</h1>
+                <!-- <h1>WELLCOME BACK!</h1> -->
             </div>
             <div class="right d-flex ">
 
@@ -45,7 +45,7 @@
                         <a href="#" class="forgot">ลืมรหัสผ่าน</a>
                     </div>
                     <div class="lower">
-                        <button class="login-btn">เข้าสู่ระบบ</button>
+                        <a href="../html/tutor_home.html" class="login-btn">เข้าสู่ระบบ</a>
                         <p class="register-text">
                             ยังไม่มีบัญชีใช่ไหม?
                             <a href="#">สร้างได้เลย</a>
@@ -63,21 +63,9 @@
             </div>
         </div>
     </main>
-    <footer></footer>
-    <script>
-        const eye = document.getElementById("eye");
-        const password = document.getElementById("password");
 
-        eye.addEventListener("click", () => {
-            if (password.type === "password") {
-                password.type = "text";
-                eye.classList.replace("bi-eye-slash", "bi-eye-fill");
-            } else {
-                password.type = "password";
-                eye.classList.replace("bi-eye-fill", "bi-eye-slash");
-            }
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/login.js"></script>
 
 </body>
 
