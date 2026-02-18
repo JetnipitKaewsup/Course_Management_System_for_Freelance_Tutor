@@ -10,17 +10,28 @@ const selectMonth = document.getElementById("month");
 const selectYear = document.getElementById("year");
 
 async function getHours(month, year) {
-  month = parseInt(month);
-  year = parseInt(year);
+  let firstDay;
+  let nextMonth;
 
-  const christianYear = year - 543;
+  if (year === "all") {
+    firstDay = "1900-01-01";
+    nextMonth = "2100-01-01";
+  } else {
+    const christianYear = parseInt(year) - 543;
 
-  const firstDay = `${christianYear}-${String(month).padStart(2, "0")}-01`;
+    if (month === "all") {
+      firstDay = `${christianYear}-01-01`;
+      nextMonth = `${christianYear + 1}-01-01`;
+    } else {
+      const monthNum = parseInt(month);
 
-  const nextMonth =
-    month === 12
-      ? `${christianYear + 1}-01-01`
-      : `${christianYear}-${String(month + 1).padStart(2, "0")}-01`;
+      firstDay = `${christianYear}-${String(monthNum).padStart(2, "0")}-01`;
+      nextMonth =
+        month === 12
+          ? `${christianYear + 1}-01-01`
+          : `${christianYear}-${String(monthNum + 1).padStart(2, "0")}-01`;
+    }
+  }
 
   const { data, error } = await db
     .from("classsession")
@@ -56,6 +67,8 @@ async function displayHours() {
 
   document.querySelector(".showHours").textContent = `${totalHours}`;
 }
+
+async function getStudent() {}
 
 selectMonth.addEventListener("change", displayHours);
 selectYear.addEventListener("change", displayHours);
